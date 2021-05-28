@@ -3,7 +3,7 @@
 unset($CFG);
 global $CFG;
 $CFG = new stdClass();
-
+$CFG->getremoteaddrconf = 0; // ERROR - Installation must be finished from the original IP address, sorry - Moodle
 $CFG->dbtype    = getenv('DATABASE_TYPE');
 $CFG->dblibrary = 'native';
 $CFG->dbhost    = getenv('DATABASE_HOST');
